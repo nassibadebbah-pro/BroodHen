@@ -6,12 +6,12 @@ import { getStorage } from 'firebase/storage';
 
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: "broodhen-64736.firebaseapp.com",
-  projectId: "broodhen-64736",
-  storageBucket: "broodhen-64736.appspot.com",
-  messagingSenderId: "702592745444",
-  appId: "1:702592745444:web:bf39f0c3d11b7fe1dc91f1"
+  apiKey: "YOUR_FIREBASE_API_KEY_HERE",
+  authDomain: "YOUR_FIREBASE_AUTH_DOMAIN_HERE",
+  projectId: "YOUR_FIREBASE_PROJECT_ID_HERE",
+  storageBucket: "YOUR_STORAGE_BUCKET_HERE",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID_HERE",
+  appId: "YOUR_APP_ID_HERE"
 };
 
 

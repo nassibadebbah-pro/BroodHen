@@ -31,7 +31,11 @@ yarn-error.*
 
 # local env files
 .env*.local
-FIREBASE_API_KEY=AIzaSyCB29pd_2aSPFFMdukukht5cYo-47vVX2M
+
+.env
+
+.env.local
+
 
 
 # typescript
