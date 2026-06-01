@@ -1,48 +1,31 @@
-# Welcome to your Expo app 👋
+# BroodHen
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+BroodHen is an innovative application designed to help farmers and breeders track egg incubation stages from day one until hatching. The app combines smart incubation tracking, a specialized marketplace, and an educational library to streamline hatchery management and improve hatch rates.
 
-## Get started
 
-1. Install dependencies
 
-   npm install
-   
+## Key Features
 
-2. Start the app
+* **Incubation Tracking:** Input egg details and receive smart notifications and alerts regarding crucial incubation stages (temperature, humidity, egg candling, etc.).
+  
+  ![Incubation Tracking Screenshot](./assets/screenshots/tracking-screen_1.png)(./assets/screenshots/tracking-screen_2.png)(./assets/screenshots/tracking-screen_3.png)
 
-    npx expo start
-   
+* **Specialized Marketplace:** A built-in store to purchase various egg types, incubation equipment, feeds, and poultry care supplies.
+  
+  ![Marketplace Screenshot](./assets/screenshots/marketplace-screen.png)
 
-In the output, you'll find options to open the app in a
+* **Educational Library:** An encyclopedic resource featuring best practices, guides, and tips to maximize hatch rates and improve poultry care.
+  
+  ![Library Screenshot](./assets/screenshots/library-screen.png)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Requirements
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+* **Android:** OS 8.0 or higher.
+* **iOS:** iOS 12.0 or higher.
+* *Note: An active internet connection is required to sync data, browse the shop, and access the library.*
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
+## Contact
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For inquiries, support, or business opportunities, feel free to reach out at: [nassiba.debbah@gmail.com]
