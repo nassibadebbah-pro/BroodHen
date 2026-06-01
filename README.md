@@ -16,12 +16,13 @@ BroodHen is an innovative application designed to help farmers and breeders trac
 
 * **Specialized Marketplace:** A built-in store to purchase various egg types, incubation equipment, feeds, and poultry care supplies.
   
-  <img src="./assets/screenshots/marketplace-screen.png" width="30%" alt="Marketplace" />
 
 * **Educational Library:** An encyclopedic resource featuring best practices, guides, and tips to maximize hatch rates and improve poultry care.
-  
-  <img src="./assets/screenshots/library-screen.png" width="30%" alt="Library" />
 
+<div style="display: flex; gap: 10px;">
+  <img src="./assets/screenshots/library-screen.png" width="30%" alt="Library" />
+  <img src="./assets/screenshots/marketplace-screen.png" width="30%" alt="Marketplace" />
+</div>
 
 ## Requirements
 
