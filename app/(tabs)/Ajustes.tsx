@@ -30,7 +30,7 @@ const SettingsScreen = () => {
     <ScrollView contentContainerStyle={[styles.container, { backgroundColor }]}>
       <Text style={[styles.header, { color: textColor }]}>Ajustes</Text>
 
-      {/* تأكد من وجود ملف باسم Perfil.tsx داخل مجلد app/(tabs) ليعمل هذا الزر */}
+      {}
       <TouchableOpacity
         style={[styles.option, { backgroundColor: cardColor }]}
         onPress={() => router.push('/Perfil')}
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 15,
     borderRadius: 10,
-    // تم إزالة shadowOld المتعارضة مع الويب والاعتماد على التظليل النظيف
+    
     boxShadow: '0px 3px 5px rgba(0,0,0,0.1)', 
     elevation: 5,
   },

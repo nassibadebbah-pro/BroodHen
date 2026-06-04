@@ -80,7 +80,7 @@ Longevidad: Su esperanza de vida es de 10 a 20 años.`
 ];
 
 const InformacionScreen = () => {
-  // ✅ استخدام as any لمنع TypeScript من إظهار أي خطأ بخصوص الـ router
+  
   const router = useRouter() as any;
 
   const handlePress = (bird: typeof birds[0]) => {

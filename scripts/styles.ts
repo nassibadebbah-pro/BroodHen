@@ -134,38 +134,42 @@ title: {
      fontWeight: 'bold' 
    },
    eggContainer: { 
-     position: 'relative', 
-     width: 180, 
-     height: 180, 
-     alignItems: 'center', 
-     justifyContent: 'center', 
-     marginBottom: 20 
+    position: 'relative', 
+    width: 180, 
+    height: 180, 
+    alignItems: 'center', 
+    justifyContent: 'center', 
+    marginBottom: 20,
+    // overflow: 'visible',
    },
-   eggImageContainer: { 
-     position: 'relative', 
-     justifyContent: 'center', 
-     alignItems: 'center' 
-   },
-   eggImage: { 
-     width: '100%', 
-     height: '100%', 
-     resizeMode: 'contain' 
-   },
-   eggTurningIcon: { 
+  eggImage: { 
     position: 'absolute', 
+    width: '150%', 
+    height: '150%', 
+    resizeMode: 'contain',
+    opacity: 1,         
+    zIndex: 1,             
+   },
+  eggImageContainer: { 
+    position: 'absolute', 
+    justifyContent: 'center', 
+    alignItems: 'center',
+    zIndex: 2,           
+   },
+  eggTurningIcon: { 
     width: 40, 
     height: 40, 
     resizeMode: 'contain', 
-    top: -180, 
-  },
-  
-   remainingDays: { 
-     position: 'absolute', 
-     bottom: 10, 
-     fontSize: 36, 
-     fontWeight: 'bold', 
-     color: '#007BFF' 
+    
    },
+  remainingDays: {
+    fontSize: 24,        
+    fontWeight: 'bold',
+    color: '#333',
+    zIndex: 3,            
+   },
+  
+  
    modalContainer: { 
      flex: 1, 
      justifyContent: 'center', 
@@ -452,7 +456,13 @@ buttonsContainer: {
   flexDirection: 'row',
   justifyContent: 'space-around',
 },
-
+imageP: {
+        width: 300,
+        height: 300,
+        marginBottom: 20,
+        borderRadius: 10, 
+      },
+      
 
 
  ///////////////***********Ajustes***********/////////////////////////
@@ -571,24 +581,6 @@ logoutText: {
       fontSize: 18,
       marginVertical: 10,
     },
-  
-    
-   /////////*****InfPollo */////////////
-  
-
-      
-      imageP: {
-        width: 300,
-        height: 300,
-        marginBottom: 20,
-        borderRadius: 10, 
-      },
-      
-      
-    
-  
-
-
 
 });
 

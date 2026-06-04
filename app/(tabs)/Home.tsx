@@ -1,10 +1,10 @@
 import { collection, doc, onSnapshot, updateDoc } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView } from 'react-native-safe-area-context'; // ✅ الاستيراد الحديث والصحيح بدون تحذيرات
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Alert, Button, Image, Modal, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 import { db } from '../../components/firebase';
-import Header from '../../scripts/Header'; // المسار الخاص بك كما هو مفضل لديك
+import Header from '../../scripts/Header'; 
 import styles from '../../scripts/styles'; 
 
 const MainScreen = () => {
@@ -186,34 +186,44 @@ const MainScreen = () => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
-      {/* الهيدر مستقل بذاته في الأعلى تماماً */}
+    
       <Header />
       
-      {/* محتوى الشاشة الرئيسي يبدأ بانتظام من هنا */}
       <View style={[styles.container, { paddingHorizontal: 15 }]}>
         <Text style={[styles.title, { marginTop: 15, textAlign: 'center' }]}>
           {currentCycle.type || 'No Active Cycle'}
         </Text>
         
-        {/* قسم المؤشرات الأفقية */}
+      
         <View style={{ flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', marginVertical: 15 }}>
           <View style={styles.indicator}>
-            <Image source={require('../../assets/images/humedite.png')} style={{ width: 24, height: 24, resizeMode: 'contain' }} />
+            <Image source={require('../../assets/images/humedite.png')} style={{ width: 80, height: 80, resizeMode: 'contain' }} />
             <Text style={styles.value}>{humidity}</Text>
           </View>
           
-          <View style={styles.eggContainer}>
-            <Image source={currentCycle.incubationDate ? getEggImage(currentCycle.incubationDate) : require('../../assets/images/pollo.png')} style={styles.eggImage} />
-            <View style={styles.eggImageContainer}>
-              <Image source={getEggTurningIcon(currentCycle.incubationDate)} style={{ width: 20, height: 20, resizeMode: 'contain' }} />
-            </View>
-            <Text style={styles.remainingDays}>
-              {daysLeft}
-            </Text>
-          </View>
+         <View style={styles.eggContainer}>
+  { }
+  <Image 
+    source={currentCycle.incubationDate ? getEggImage(currentCycle.incubationDate) : require('../../assets/images/pollo3.png')} 
+    style={styles.eggImage} 
+  />
+  
+  { }
+  <View style={styles.eggImageContainer}>
+    <Image 
+      source={getEggTurningIcon(currentCycle.incubationDate)} 
+      style={{ width: 40, height: 40, resizeMode: 'contain' }} 
+    />
+  </View>
+  
+  { }
+  <Text style={styles.remainingDays}>
+    {daysLeft}
+  </Text>
+   </View>
           
           <View style={styles.indicator}>
-            <Image source={require('../../assets/images/temperatura.png')} style={{ width: 24, height: 24, resizeMode: 'contain' }} />
+            <Image source={require('../../assets/images/temperatura.png')} style={{ width: 80, height: 80, resizeMode: 'contain' }} />
             <Text style={styles.value}>{temperature}</Text>
           </View>
         </View>
@@ -260,7 +270,7 @@ const MainScreen = () => {
         </View>
       </View>
 
-      {/* الـ Modals المنفصلة */}
+      
       <Modal
         visible={modalVisible}
         animationType="slide"

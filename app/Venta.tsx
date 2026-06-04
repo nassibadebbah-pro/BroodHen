@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context'; 
 import { useRouter } from 'expo-router';
 import Header from '../scripts/Header';
 import styles from '../scripts/styles';
@@ -8,16 +9,18 @@ const VentaScreen = () => {
   const router = useRouter();
 
   return (
-    <View style={styles.container}>
-      {/* استدعاء الهيدر الموحد للتطبيق */}
+   
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+      
+      { }
       <Header />
       
       <ScrollView contentContainerStyle={localStyles.scrollContainer}>
-        <Text style={styles.title}>Sección de Ventas</Text>
+        <Text style={[styles.title, { marginTop: 10 }]}>Sección de Ventas</Text>
         
         <View style={localStyles.card}>
           <Text style={localStyles.cardText}>
-            مرحباً بك في قسم المبيعات! هنا يمكنك إدارة مبيعات الطيور والبيض لاحقاً.
+            Hello
           </Text>
         </View>
 
@@ -28,24 +31,27 @@ const VentaScreen = () => {
           <Text style={styles.buttonText}>Volver al Inicio</Text>
         </TouchableOpacity>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 
-// ستايلات محلية مؤقتة لتنظيم المظهر الخاص بهذه الصفحة
 const localStyles = StyleSheet.create({
   scrollContainer: {
     padding: 20,
     alignItems: 'center',
   },
-  card: {
+  card : {
     backgroundColor: '#fff',
     padding: 20,
     borderRadius: 10,
     width: '100%',
     marginVertical: 20,
-    boxShadow: '0px 3px 5px rgba(0,0,0,0.1)',
-    elevation: 3,
+  
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 3, 
   },
   cardText: {
     fontSize: 16,

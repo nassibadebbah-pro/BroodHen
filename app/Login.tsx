@@ -85,11 +85,11 @@ const LoginScreen = () => {
             placeholder="Username (Email)"
             value={values.email}
             onChangeText={handleChange('email')}
-            onBlur={handleBlur('email')} // ✅ تم إضافة حماية وتتبع التركيز
+            onBlur={handleBlur('email')} 
             autoCapitalize="none"
             keyboardType="email-address"
           />
-          {/* ✅ التحقق من اللمس (touched) قبل إظهار الخطأ لتجربة مستخدم أفضل */}
+          
           {touched.email && errors.email && <Text style={styles.error}>{errors.email}</Text>}
 
           <View style={styles.passwordContainer}>
@@ -99,7 +99,7 @@ const LoginScreen = () => {
               secureTextEntry={!showPassword} 
               value={values.password}
               onChangeText={handleChange('password')}
-              onBlur={handleBlur('password')} // ✅ تم إضافة حماية وتتبع التركيز
+              onBlur={handleBlur('password')} 
               autoCapitalize="none"
             />
             

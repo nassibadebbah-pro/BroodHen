@@ -3,13 +3,13 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import styles from '../../scripts/styles';
 
 const PerfilScreen = () => {
-  // يمكنك مستقبلاً جلب بيانات المستخدم الحالي من Firebase Auth هنا
+ 
   const userEmail = "usuario@correo.com"; 
 
   return (
     <View style={styles.containerLog || styles.container}>
       <View style={localStyles.profileCard}>
-        {/* أيقونة افتراضية للملف الشخصي */}
+        {}
         <View style={localStyles.avatarPlaceholder}>
           <Text style={localStyles.avatarText}>👤</Text>
         </View>
@@ -21,7 +21,7 @@ const PerfilScreen = () => {
           style={[styles.button || localStyles.logoutButton, { marginTop: 30 }]}
           onPress={() => {
             console.log('Cerrar sesión');
-            // هنا يمكنك إضافة دالة تسجيل الخروج من Firebase مستقبلاً
+            
           }}
         >
           <Text style={styles.buttonText || localStyles.logoutText}>Cerrar Sesión</Text>
@@ -31,7 +31,7 @@ const PerfilScreen = () => {
   );
 };
 
-// تصميمات احتياطية سريعة في حال لم تكن بعض المسميات موجودة في ملف styles الموحد لديك
+
 const localStyles = StyleSheet.create({
   profileCard: {
     alignItems: 'center',
@@ -85,5 +85,5 @@ const localStyles = StyleSheet.create({
   },
 });
 
-// ⚠️ هذا هو السطر الأهم الذي كان يسبق كل المشاكل، تأكد من عدم حذفه:
+
 export default PerfilScreen;

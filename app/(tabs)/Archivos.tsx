@@ -42,7 +42,7 @@ function ArchivosScreen() {
   const handleLogPress = (logId: string) => {
     
     router.push({
-      pathname: '/(tabs)/Porcentaje',
+      pathname: '/Porcentaje',
       params: { logId: logId }
     });
   };

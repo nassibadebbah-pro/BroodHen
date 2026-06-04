@@ -9,7 +9,7 @@ BroodHen is an innovative application designed to help farmers and breeders trac
 * **Incubation Tracking:** Input egg details and receive smart notifications and alerts regarding crucial incubation stages (temperature, humidity, egg candling, etc.).
   
   <div style="display: flex; gap: 10px;">
-    <img src="./assets/screenshots/tracking-screen_1.png" width="30%" alt="Tracking 1" />
+    <img src="./assets/screenshots/home.jpeg" width="30%" alt="Tracking 1" />
     <img src="./assets/screenshots/tracking-screen_2.png" width="30%" alt="Tracking 2" />
     <img src="./assets/screenshots/tracking-screen_3.png" width="30%" alt="Tracking 3" />
   </div>
@@ -21,6 +21,7 @@ BroodHen is an innovative application designed to help farmers and breeders trac
 
 <div style="display: flex; gap: 10px;">
   <img src="./assets/screenshots/library-screen.png" width="30%" alt="Library" />
+  <img src="./assets/screenshots/inf2.jpeg" width="30%" alt="Library" />
   <img src="./assets/screenshots/marketplace-screen.png" width="30%" alt="Marketplace" />
 </div>
 

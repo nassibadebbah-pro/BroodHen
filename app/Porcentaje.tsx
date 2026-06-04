@@ -3,11 +3,11 @@ import { View, Text, Dimensions, ActivityIndicator, Alert } from 'react-native';
 import { BarChart, PieChart } from 'react-native-chart-kit';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../components/firebase';
-import { useLocalSearchParams } from 'expo-router'; // ✅ استخدام الموجه الصحيح لـ Expo Router
+import { useLocalSearchParams } from 'expo-router'; 
 import styles from '../scripts/styles';
 
 const PorcentajeScreen = () => {
-  // ✅ طريقة جلب الـ Params الصحيحة والآمنة في Expo Router
+  
   const params = useLocalSearchParams();
   const logId = typeof params?.logId === 'string' ? params.logId : '';
 
@@ -59,7 +59,6 @@ const PorcentajeScreen = () => {
     fetchLogData();
   }, [logId]);
 
-  // ✅ حماية بيانات الرسم البياني بالأعمدة: نضع قيم افتراضية [0] في حال كانت البيانات فارغة لتجنب الانهيار
   const barLabels = Object.keys(logData?.eggCount || {}).length > 0 ? Object.keys(logData?.eggCount || {}) : ['No Data'];
   const barValues = Object.values(logData?.eggCount || {}).length > 0 ? Object.values(logData?.eggCount || {}).map(v => Number(v)) : [0];
 
@@ -68,7 +67,7 @@ const PorcentajeScreen = () => {
     datasets: [{ data: barValues }],
   };
 
-  // Données pour le graphique circulaire
+  
   const pieData = [
     {
       name: "Hatch %",

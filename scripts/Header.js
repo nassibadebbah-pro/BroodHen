@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <View>
-      {/* الشريط العلوي للهيدر */}
+     
       <View style={styles.headerH}> 
         <TouchableOpacity onPress={toggleMenu}>
           <Image
@@ -31,7 +31,7 @@ const Header = () => {
         <View style={styles.rightSpace}></View> 
       </View>
 
-      {/* القائمة الجانبية المنبثقة */}
+     
       <Modal
         visible={menuVisible}
         transparent
@@ -41,20 +41,20 @@ const Header = () => {
         <Pressable style={styles.modalBackground} onPress={toggleMenu}>
           <View style={styles.menuContainer}>
             
-            {/* رابط: Nueva eclosión */}
+           
             <Link href="/Nueva_ecl" asChild>
               <TouchableOpacity style={styles.menuItem} onPress={toggleMenu}>
                 <View style={styles.menuRow}>
                   <Image
                     source={require('../assets/images/mas.png')}
-                    style={styles.menuIconSmall} // ✅ استخدام الكلاس الصحيح الصغير لمنع الطيران خلف النص
-                  />
+                    style={styles.menuIconSmall} 
+                    />
                   <Text style={styles.menuText}>Nueva eclosión</Text>
                 </View>
               </TouchableOpacity>
             </Link>
 
-            {/* رابط: Archivo */}
+            
             <Link href="/Archivos" asChild>
               <TouchableOpacity style={styles.menuItem} onPress={toggleMenu}>
                 <View style={styles.menuRow}>
@@ -67,7 +67,7 @@ const Header = () => {
               </TouchableOpacity>
             </Link>
 
-            {/* رابط: Tienda */}
+         
             <Link href="/Tienda" asChild>
               <TouchableOpacity style={styles.menuItem} onPress={toggleMenu}>
                 <View style={styles.menuRow}>
@@ -80,7 +80,7 @@ const Header = () => {
               </TouchableOpacity>
             </Link>
 
-            {/* رابط: Información */}
+           
             <Link href="/Informacion" asChild>
               <TouchableOpacity style={styles.menuItem} onPress={toggleMenu}>
                 <View style={styles.menuRow}>
@@ -93,7 +93,7 @@ const Header = () => {
               </TouchableOpacity>
             </Link>
 
-            {/* رابط: Ajustes */}
+           
             <Link href="/Ajustes" asChild>
               <TouchableOpacity style={styles.menuItem} onPress={toggleMenu}>
                 <View style={styles.menuRow}>
@@ -106,7 +106,7 @@ const Header = () => {
               </TouchableOpacity>
             </Link>
 
-            {/* زر إغلاق القائمة */}
+           
             <TouchableOpacity style={styles.closeButton} onPress={toggleMenu}>
               <Text style={styles.closeButtonText}>Cerrar</Text>
             </TouchableOpacity>
